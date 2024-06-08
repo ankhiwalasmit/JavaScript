@@ -32,9 +32,34 @@ const myFunction = function(){
     console.log("Hello World");
 } // functions
 
-console.log(typeof bigNumber);
-console.log(typeof outsideTemp);
-console.log(typeof scoreValue);
-console.log(typeof heroes);
-console.log(typeof myObj);
-console.log(typeof myFunction);
+// console.log(typeof bigNumber);
+// console.log(typeof outsideTemp);
+// console.log(typeof scoreValue);
+// console.log(typeof heroes);
+// console.log(typeof myObj);
+// console.log(typeof myFunction);
+
+
+// types of memory: stack(primitive), heap(non-primitive)
+
+// call by value
+let myYoutubename= "smitankhiwaladotcom"
+
+let anothername = myYoutubename
+anothername = "chaiaurcode"
+
+console.log(myYoutubename);
+console.log(anothername);
+
+// call by reference
+let userOne = {
+    email: "user@google.com",
+    upi: "user@ybl"
+}
+
+let userTwo = userOne
+
+userTwo.email = "smit@google.com"
+
+console.log(userOne.email);
+console.log(userTwo.email);

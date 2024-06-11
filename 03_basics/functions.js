@@ -44,4 +44,31 @@ function loginUserMessage(username = "sam"){
 
 // console.log(loginUserMessage("smit"))
 // console.log(loginUserMessage(""))
-console.log(loginUserMessage()) // if we don't pass anything, it will return undefined
+// console.log(loginUserMessage()) // if we don't pass anything, it will return undefined
+
+// ... is used to pass multiple values in a function and all these values are added in an array
+// function calculateCartPrice(...num1){
+//     return num1
+// }
+
+// first argument goes to first parameter, second argument goes to second parameter, and the remaining values goes to ...num1
+function calculateCartPrice(val1, val2, ...num1){
+    return num1
+}
+
+// console.log(calculateCartPrice(200, 400, 500, 2000));
+
+const user = {
+    username: "smit",
+    price: 199
+}
+
+function handleObject(anyobject){
+    console.log(`User name is ${anyobject.username} and price is ${anyobject.price}`);
+}
+
+// handleObject(user)
+handleObject({
+    username: "sam",
+    price: 399
+})

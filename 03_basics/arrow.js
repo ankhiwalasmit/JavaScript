@@ -13,7 +13,7 @@ const user = {
 // user.username = "sam"
 // user.welcomeMessage(); // sam , welcome to website
 
-// in browsers, windows is the global object
+// in browsers, window object is the global object
 // in node environment, eempty object is the global object
 // console.log(this); // refers to empty object
 

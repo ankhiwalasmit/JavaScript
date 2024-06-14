@@ -18,7 +18,7 @@
     // Selecting the parent element
     const parent = document.querySelector('.parent')
     // console.log(parent);
-    // console.log(parent.children);
+    // console.log(parent.children); // returns a HTMLCollection
     // console.log(parent.children[1].innerHTML);
 
     // for (let i = 0; i < parent.children.length; i++) {
@@ -32,9 +32,9 @@
 
     const dayOne = document.querySelector('.day')
     // console.log(dayOne);
-    // console.log(dayOne.parentElement); // prints the parent of the element
-    // console.log(dayOne.nextElementSibling); // prints the next sibling of the element
+    // console.log(dayOne.parentElement); // returns the parent of the element
+    // console.log(dayOne.nextElementSibling); // returns the next sibling of the element
 
-    console.log("NODES: ", parent.childNodes);
+    console.log("NODES: ", parent.childNodes); // returns all the childrens(child nodes) of the parent
 </script>
 </html>

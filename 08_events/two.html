@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Chai aur code</h1>
+    <button id="stop">Stop</button>
+</body>
+<script>
+    // time is written in ms
+    // execute the program after the given time
+    // it executes the program only one time
+    // setTimeout(function(){
+    //     console.log("Smit");
+    // }, 2000)
+
+    const saySmit = function(){
+        console.log("Smit");
+    }
+    // setTimeout(saySmit, 2000) // here we pass function reference
+
+    const changeText = function(){
+        document.querySelector('h1').innerHTML = "best JS series"
+    }
+    const changeMe = setTimeout(changeText, 2000) 
+    // clearTimeout(changeMe)
+    document.querySelector('#stop').addEventListener('click', function(){
+        clearTimeout(changeMe)
+        console.log("STOPPED"); // stops the execution of the setTimeout method
+    })
+</script>
+</html>

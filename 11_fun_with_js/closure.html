@@ -20,12 +20,13 @@
     // }
     // init();
 
+    // lexical scope: inner function has access to all the variables of the outer(parent) function if it exists
     // function outer(){
     //     let username = "smit"
     //     // console.log("OUTER", secret); // error
     //     function inner(){
     //         let secret = "my123"
-    //         console.log("inner", username); // inner function has access to all the variables of the outer(parent) function
+    //         console.log("inner", username); 
     //     }
     //     function innerTwo(){
     //         console.log("innerTwo", username);
@@ -37,12 +38,13 @@
     // outer()
     // console.log("TOO OUTER", username); // error
 
+    // closure means if we return a function, not only the function is returned, its whole lexical scope is also returned
     // function makeFunc() {
     //     const name = "Mozilla";
     //     function displayName() {
     //         console.log(name);
     //     }
-    //     // return displayName; // returns not only the inner function but it also returns the scope of the outer function because of lexical analysis
+    //     return displayName; // returns not only the inner function but it also returns the scope of the outer function because of lexical scoping
     // }
     // const myFunc = makeFunc();
     // myFunc();
